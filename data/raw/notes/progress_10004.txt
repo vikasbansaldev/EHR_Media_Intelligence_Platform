@@ -1,0 +1,14 @@
+Patient:  Casey Fakenham
+MRN: MRN-00010004
+DOB: 1983-02-18
+Sex: 2
+DATE OF SERVICE: March 19, 2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10004-2
+AUTHOR: Dr. D. Example
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of palpable left breast mass, bi-rads 4.
+  Reports no change of self-detected left breast lump.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

@@ -1,0 +1,14 @@
+Patient:  Morgan Synthby
+MRN: MRN-00010005
+DOB: September 30, 1966
+Sex: 1
+DATE OF SERVICE: 04/01/2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10005-2
+AUTHOR: Dr. A. Placeholder
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of acute ischemic stroke, left mca territory.
+  Reports mild worsening of sudden right-sided weakness and slurred speech.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

@@ -1,0 +1,14 @@
+PATIENT:  Quinn Placeholder
+MRN:   mrn: 10007
+DOB: 1955-01-21
+Sex: Female
+DATE OF SERVICE: May 01, 2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10007-2
+AUTHOR: Dr. B. Fictional
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of congestive heart failure, nyha class iii.
+  Reports improvement of progressive dyspnea on exertion and bilateral leg swelling.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

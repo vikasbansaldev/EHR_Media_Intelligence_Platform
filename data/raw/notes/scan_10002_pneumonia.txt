@@ -1,0 +1,15 @@
+patient name:  Jordan Samplecroft
+MRN: MRN10002
+DOB: 11/03/1971
+Sex: male
+DATE OF SERVICE: 2025-01-27
+DOCUMENT TYPE: Radiology Report
+TITLE: Chest X-ray report
+ENCOUNTER: ENC-10002-1
+AUTHOR: Dr. R. Radiologist
+----------------------------------------
+  CHEST X-RAY REPORT.
+  Indication: fever, productive cough and pleuritic chest pain.
+  Findings: Right lower lobe airspace consolidation consistent with pneumonia.
+  No pneumothorax.
+  Impression: findings consistent with community-acquired pneumonia, right lower lobe.

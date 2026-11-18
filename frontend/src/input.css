@@ -1,0 +1,110 @@
+/* Tailwind v4 entry. Build: `npm run build` -> assets/styles.css */
+@import "tailwindcss";
+
+@source "../index.html";
+@source "../assets/app.js";
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("./fonts/public-sans-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Core palette */
+  --color-paper: #f6f8f7;   /* ward linen: page background */
+  --color-ink: #1c2b33;     /* slate-teal ink: text */
+  --color-muted: #55666e;   /* secondary text (AA on paper and white) */
+  --color-rule: #d3ddda;    /* hairlines */
+  --color-accent: #0e6b66;  /* surgical teal: actions, focus */
+  --color-accent-soft: #e2f0ee;
+  --color-alarm: #b3261e;   /* out-of-range values only */
+  --color-alarm-soft: #fbeceb;
+  --color-caution: #8a5a00; /* low-confidence summaries */
+  --color-caution-soft: #fbf3e2;
+
+  /* Record-type hues: colour encodes what kind of record it is */
+  --color-doc: #3d5a80;     /* DocumentReference: notes and summaries */
+  --color-doc-soft: #e7edf5;
+  --color-dx: #0e6b66;      /* DiagnosticReport: imaging and labs */
+  --color-dx-soft: #e2f0ee;
+  --color-ai: #5b4b8a;      /* AI clinical summary */
+  --color-ai-soft: #eeebf6;
+}
+
+@layer base {
+  html {
+    font-feature-settings: "tnum" 1; /* tabular numerals: MRNs, dates, scores line up */
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  mark {
+    background: color-mix(in srgb, var(--color-accent) 16%, transparent);
+    color: inherit;
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+}
+
+@layer components {
+  /* Relevance meter: drawn like a lab result bar, scaled to the best match */
+  .match-meter {
+    position: relative;
+    height: 6px;
+    width: 4.5rem;
+    border-radius: 3px;
+    background: var(--color-rule);
+    overflow: hidden;
+  }
+  @media (min-width: 40rem) {
+    .match-meter {
+      width: 7rem;
+    }
+  }
+  .match-meter > span {
+    position: absolute;
+    inset: 0 auto 0 0;
+    background: var(--color-accent);
+    border-radius: 3px;
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg, #e8eeec 25%, #f1f5f4 50%, #e8eeec 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s infinite linear;
+    border-radius: 4px;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.drawer-panel {
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.drawer-backdrop {
+  transition: opacity 220ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+  }
+  .drawer-panel,
+  .drawer-backdrop {
+    transition: none;
+  }
+}

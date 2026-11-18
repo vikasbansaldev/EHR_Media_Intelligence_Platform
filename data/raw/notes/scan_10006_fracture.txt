@@ -1,0 +1,15 @@
+PATIENT:  Taylor Demoson
+MRN: MRN10006
+DOB: May 06, 1992
+Sex: M
+DATE OF SERVICE: 20250406
+DOCUMENT TYPE: Radiology Report
+TITLE: X-ray right wrist report
+ENCOUNTER: ENC-10006-1
+AUTHOR: Dr. R. Radiologist
+----------------------------------------
+  X-RAY RIGHT WRIST REPORT.
+  Indication: right wrist pain after a fall on an outstretched hand.
+  Findings: Displaced, dorsally angulated fracture of the distal radius.
+  No intra-articular extension.
+  Impression: findings consistent with closed displaced fracture of the right distal radius.

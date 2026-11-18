@@ -1,0 +1,14 @@
+PATIENT:  Taylor Demoson
+MRN:   MRN10006
+DOB: May 06, 1992
+Sex: M
+DATE OF SERVICE: 17-Apr-2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10006-2
+AUTHOR: Dr. D. Example
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of closed displaced fracture of the right distal radius.
+  Reports improvement of right wrist pain after a fall on an outstretched hand.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

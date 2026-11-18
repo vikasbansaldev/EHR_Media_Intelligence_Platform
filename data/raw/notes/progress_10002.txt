@@ -1,0 +1,14 @@
+Patient:  Jordan Samplecroft
+MRN:   MRN10002
+DOB: 03-Nov-1971
+Sex: M
+DATE OF SERVICE: 02/13/2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10002-2
+AUTHOR: Dr. D. Example
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of community-acquired pneumonia, right lower lobe.
+  Reports no change of fever, productive cough and pleuritic chest pain.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

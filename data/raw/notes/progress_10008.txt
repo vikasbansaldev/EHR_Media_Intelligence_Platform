@@ -1,0 +1,14 @@
+Patient:  Harper Lorem
+MRN:   MRN-00010008
+DOB: 09-Dec-1978
+Sex: Female
+DATE OF SERVICE: 05/18/2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10008-2
+AUTHOR: Dr. A. Placeholder
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of iron deficiency anemia.
+  Reports no change of fatigue and exertional lightheadedness.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

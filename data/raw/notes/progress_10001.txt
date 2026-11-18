@@ -1,0 +1,14 @@
+PATIENT:  Avery Testwell
+MRN:   MRN-00010001
+DOB: 04/12/1958
+Sex: F
+DATE OF SERVICE: 01/22/2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10001-2
+AUTHOR: Dr. A. Placeholder
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of congestive heart failure, nyha class iii.
+  Reports mild worsening of progressive dyspnea on exertion and bilateral leg swelling.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

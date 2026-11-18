@@ -1,0 +1,14 @@
+Patient:  Emerson Nullbury
+MRN:    00010010 
+DOB: August 25, 2001
+Sex: 1
+DATE OF SERVICE: 06/26/2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10010-2
+AUTHOR: Dr. A. Placeholder
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of acute appendicitis.
+  Reports improvement of right lower quadrant abdominal pain with nausea.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

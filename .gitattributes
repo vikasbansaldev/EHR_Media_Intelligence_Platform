@@ -1,0 +1,5 @@
+# Keep sample data and sources byte-identical on every OS (no CRLF conversion on Windows).
+* text=auto eol=lf
+*.woff2 binary
+*.pdf binary
+*.npy binary

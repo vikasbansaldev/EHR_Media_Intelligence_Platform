@@ -1,0 +1,15 @@
+{
+  "name": "ehr-intel-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Clinician search UI for the EHR Media Intelligence Platform (Tailwind CSS + vanilla JS).",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o assets/styles.css --minify && node scripts/copy-fonts.mjs",
+    "watch": "tailwindcss -i src/input.css -o assets/styles.css --watch"
+  },
+  "devDependencies": {
+    "@fontsource-variable/public-sans": "^5.2.5",
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

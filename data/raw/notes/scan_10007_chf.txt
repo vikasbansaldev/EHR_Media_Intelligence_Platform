@@ -1,0 +1,15 @@
+patient name:  Quinn Placeholder
+MRN: 10007
+DOB: 21-Jan-1955
+Sex: F
+DATE OF SERVICE: 19-Apr-2025
+DOCUMENT TYPE: Radiology Report
+TITLE: Chest X-ray report
+ENCOUNTER: ENC-10007-1
+AUTHOR: Dr. R. Radiologist
+----------------------------------------
+  CHEST X-RAY REPORT.
+  Indication: progressive dyspnea on exertion and bilateral leg swelling.
+  Findings: Cardiomegaly with small bilateral pleural effusions and pulmonary vascular congestion.
+  No focal consolidation.
+  Impression: findings consistent with congestive heart failure, nyha class iii.

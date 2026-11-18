@@ -1,0 +1,14 @@
+Patient:  Rowan Ipsumfield
+MRN:    00010009 
+DOB: 19610314
+Sex: 1
+DATE OF SERVICE: 2025-06-13
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10009-2
+AUTHOR: Dr. C. Synthetic
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of type 2 diabetes mellitus with hyperglycemia.
+  Reports improvement of polyuria and elevated home glucose readings.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Leave empty to call the API on the same origin that serves this page. -->
+  <meta name="api-base" content="">
+  <title>Record search - EHR Media Intelligence</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect x='1' y='1' width='26' height='26' rx='6' fill='%230e6b66'/%3E%3Cpath d='M7 15h4l2-5 3 9 2-4h3' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/public-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="min-h-screen">
+  <a href="#results" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2 focus:shadow">Skip to results</a>
+
+  <header class="border-b border-rule bg-white">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <div class="flex items-center gap-3">
+        <svg class="h-7 w-7 text-accent" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="26" height="26" rx="6" stroke="currentColor" stroke-width="2"/>
+          <path d="M7 15h4l2-5 3 9 2-4h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <p class="text-[15px] font-semibold leading-tight">Record search</p>
+          <p class="text-xs text-muted">EHR Media Intelligence</p>
+        </div>
+      </div>
+      <p id="index-status" class="hidden text-right text-xs text-muted sm:block" aria-live="polite">Connecting…</p>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+    <!-- Search -->
+    <section aria-labelledby="search-heading" class="pt-8 sm:pt-12">
+      <h1 id="search-heading" class="max-w-2xl text-2xl font-semibold tracking-tight sm:text-[28px]">
+        Find a patient record by what it says
+      </h1>
+      <p class="mt-2 max-w-2xl text-[15px] text-muted">
+        Search notes, imaging reports, lab panels and AI summaries in plain language.
+      </p>
+
+      <form id="search-form" role="search" class="mt-6" autocomplete="off">
+        <label for="query" class="sr-only">Search patient records</label>
+        <div class="flex items-stretch gap-2">
+          <div class="relative flex-1">
+            <svg class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="m14 14 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input id="query" name="query" type="search" maxlength="500" spellcheck="false"
+                   placeholder="e.g. blood clot in the lungs, rising creatinine, BI-RADS 4"
+                   aria-describedby="query-hint"
+                   class="h-14 w-full rounded-lg border border-rule bg-white pl-12 pr-4 text-[17px] shadow-[0_1px_0_rgba(28,43,51,0.04)] placeholder:text-muted/70 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30">
+          </div>
+          <button type="submit" class="h-14 rounded-lg bg-accent px-6 text-[15px] font-semibold text-white hover:bg-[#0b5a56] focus-visible:outline-offset-2">
+            Search
+          </button>
+        </div>
+        <p id="query-hint" class="mt-2 text-xs text-muted">
+          Results update as you type. Press <kbd class="rounded border border-rule bg-white px-1">/</kbd> to jump here,
+          <kbd class="rounded border border-rule bg-white px-1">↓</kbd> to move through results.
+        </p>
+
+        <!-- Filters -->
+        <fieldset class="mt-5 flex flex-wrap items-end gap-x-4 gap-y-3 border-t border-rule pt-4">
+          <legend class="sr-only">Filters</legend>
+          <div>
+            <label for="filter-type" class="block text-xs font-medium text-muted">Record type</label>
+            <select id="filter-type" name="resource_type"
+                    class="mt-1 h-10 min-w-[13rem] rounded-md border border-rule bg-white px-3 text-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30">
+              <option value="">All record types</option>
+            </select>
+          </div>
+          <div>
+            <label for="filter-from" class="block text-xs font-medium text-muted">From</label>
+            <input id="filter-from" name="date_from" type="date"
+                   class="mt-1 h-10 rounded-md border border-rule bg-white px-3 text-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30">
+          </div>
+          <div>
+            <label for="filter-to" class="block text-xs font-medium text-muted">To</label>
+            <input id="filter-to" name="date_to" type="date"
+                   class="mt-1 h-10 rounded-md border border-rule bg-white px-3 text-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30">
+          </div>
+          <button id="clear-filters" type="button"
+                  class="h-10 rounded-md px-3 text-sm font-medium text-accent hover:bg-accent-soft disabled:cursor-default disabled:text-muted/60 disabled:hover:bg-transparent" disabled>
+            Clear filters
+          </button>
+          <p id="filter-error" class="w-full text-sm text-alarm" role="alert" hidden></p>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Results -->
+    <section id="results" aria-labelledby="results-heading" class="mt-8" tabindex="-1">
+      <div class="flex items-baseline justify-between gap-4">
+        <h2 id="results-heading" class="text-sm font-semibold">Results</h2>
+        <p id="results-meta" class="text-xs text-muted"></p>
+      </div>
+      <p id="sr-status" class="sr-only" role="status" aria-live="polite"></p>
+      <div id="results-body" class="mt-3" aria-busy="false"></div>
+    </section>
+  </main>
+
+  <!-- Patient detail drawer -->
+  <div id="drawer" class="fixed inset-0 z-40 hidden" aria-hidden="true">
+    <div id="drawer-backdrop" class="drawer-backdrop absolute inset-0 bg-ink/40 opacity-0"></div>
+    <aside id="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title"
+           class="drawer-panel absolute inset-y-0 right-0 flex w-full translate-x-full flex-col bg-white shadow-2xl sm:max-w-xl">
+      <div class="flex items-start justify-between gap-4 border-b border-rule px-5 py-4 sm:px-6">
+        <div class="min-w-0">
+          <h2 id="drawer-title" class="truncate text-lg font-semibold">Patient</h2>
+          <p id="drawer-subtitle" class="mt-0.5 text-sm text-muted"></p>
+        </div>
+        <button id="drawer-close" type="button" class="-mr-2 rounded-md p-2 text-muted hover:bg-paper hover:text-ink" aria-label="Close patient details">
+          <svg class="h-5 w-5" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div id="drawer-body" class="flex-1 overflow-y-auto px-5 py-5 sm:px-6"></div>
+    </aside>
+  </div>
+
+  <template id="tpl-skeleton">
+    <div class="border-b border-rule py-4" aria-hidden="true">
+      <div class="skeleton h-4 w-48"></div>
+      <div class="skeleton mt-3 h-3 w-3/4"></div>
+      <div class="skeleton mt-2 h-3 w-2/3"></div>
+    </div>
+  </template>
+
+  <script src="assets/app.js" type="module"></script>
+</body>
+</html>

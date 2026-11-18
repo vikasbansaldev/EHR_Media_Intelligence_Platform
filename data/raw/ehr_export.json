@@ -1,0 +1,583 @@
+{
+  "export_meta": {
+    "system": "SIMULATED-EHR",
+    "generated_by": "generate_synthetic_data.py",
+    "seed": 42,
+    "contains_real_phi": false
+  },
+  "records": [
+    {
+      "source_id": "EPIC-00001",
+      "patient": {
+        "mrn": "10001",
+        "name": "TESTWELL, AVERY",
+        "dob": "1958-04-12",
+        "sex": "female"
+      },
+      "encounter": {
+        "id": "ENC-10001-1",
+        "class": "inpatient",
+        "start": "2025-01-06",
+        "end": "2025-01-10"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Congestive heart failure, NYHA class III",
+        "date": "2025-01-10T07:00:00",
+        "author": "Dr. D. Example",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-01-06, discharged 2025-01-10. Chief complaint: progressive dyspnea on exertion and bilateral leg swelling. Principal diagnosis: Congestive heart failure, NYHA class III. Secondary diagnoses: Type 2 diabetes mellitus with hyperglycemia. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00002",
+      "patient": {
+        "mrn": "10001",
+        "name": "TESTWELL, AVERY",
+        "dob": "April 12, 1958"
+      },
+      "encounter": {
+        "id": "ENC-10001-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "title": "Chest X-ray report",
+        "date": "2025-01-06T10:00:00",
+        "author": "Dr. R. Radiologist",
+        "text": "CHEST X-RAY REPORT. Indication: progressive dyspnea on exertion and bilateral leg swelling. Findings: Cardiomegaly with small bilateral pleural effusions and pulmonary vascular congestion. No focal consolidation. Impression: findings consistent with congestive heart failure, nyha class iii."
+      }
+    },
+    {
+      "source_id": "EPIC-00003",
+      "patient": {
+        "mrn": "10002",
+        "name": "Jordan Samplecroft",
+        "dob": "",
+        "sex": "MALE"
+      },
+      "encounter": {
+        "id": "ENC-10002-1",
+        "class": "inpatient",
+        "start": "2025-01-26",
+        "end": "2025-01-31"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Community-acquired pneumonia, right lower lobe",
+        "date": "01/31/2025 11:00",
+        "author": "Dr. C. Synthetic",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-01-26, discharged 2025-01-31. Chief complaint: fever, productive cough and pleuritic chest pain. Principal diagnosis: Community-acquired pneumonia, right lower lobe. Secondary diagnoses: Chronic obstructive pulmonary disease with acute exacerbation. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00004",
+      "patient": {
+        "mrn": "MRN10002",
+        "name": "SAMPLECROFT, JORDAN",
+        "dob": "03-Nov-1971",
+        "sex": "MALE"
+      },
+      "encounter": {
+        "id": "ENC-10002-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "title": "CT chest report",
+        "date": "2025-01-27T03:00:00",
+        "author": "Dr. R. Radiologist",
+        "text": "CT CHEST REPORT. Indication: worsening shortness of breath and wheeze. Findings: Centrilobular emphysema, upper-lobe predominant. No mass. Impression: findings consistent with chronic obstructive pulmonary disease with acute exacerbation."
+      }
+    },
+    {
+      "source_id": "EPIC-00005",
+      "patient": {
+        "mrn": "mrn: 10003",
+        "name": "MOCKFORD, RILEY",
+        "dob": "27-Jul-1949",
+        "sex": "Female"
+      },
+      "encounter": {
+        "id": "ENC-10003-1",
+        "class": "inpatient",
+        "start": "2025-02-09",
+        "end": "2025-02-15"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Chronic kidney disease stage 4",
+        "author": "Dr. B. Fictional",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-02-09, discharged 2025-02-15. Chief complaint: fatigue and reduced urine output. Principal diagnosis: Chronic kidney disease stage 4. Secondary diagnoses: Type 2 diabetes mellitus with hyperglycemia. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00006",
+      "patient": {
+        "mrn": "mrn: 10003",
+        "name": {
+          "given": "Riley",
+          "family": "Mockford"
+        },
+        "dob": "07/27/1949",
+        "sex": "Female"
+      },
+      "encounter": {
+        "id": "ENC-10003-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "date": "2025-02-10T09:00:00",
+        "author": "Dr. R. Radiologist",
+        "text": "RENAL ULTRASOUND REPORT. Indication: fatigue and reduced urine output. Findings: Bilateral echogenic, small kidneys consistent with chronic medical renal disease. No hydronephrosis. Impression: findings consistent with chronic kidney disease stage 4."
+      }
+    },
+    {
+      "source_id": "EPIC-00007",
+      "patient": {
+        "mrn": "10004",
+        "name": "FAKENHAM, CASEY",
+        "dob": "1983-02-18",
+        "sex": "F"
+      },
+      "encounter": {
+        "id": "ENC-10004-1",
+        "class": "inpatient",
+        "start": "2025-03-01",
+        "end": "2025-03-06"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Palpable left breast mass, BI-RADS 4",
+        "date": "2025-03-06 15:00",
+        "author": "Dr. A. Placeholder",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-03-01, discharged 2025-03-06. Chief complaint: self-detected left breast lump. Principal diagnosis: Palpable left breast mass, BI-RADS 4. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00008",
+      "patient": {
+        "mrn": "MRN-00010005",
+        "name": {
+          "given": "Morgan",
+          "family": "Synthby"
+        },
+        "dob": "1966-09-30",
+        "sex": "1"
+      },
+      "encounter": {
+        "id": "ENC-10005-1",
+        "class": "inpatient",
+        "start": "2025-03-17",
+        "end": "2025-03-22"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Acute ischemic stroke, left MCA territory",
+        "date": "2025-03-22T13:00:00",
+        "author": "Dr. D. Example",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-03-17, discharged 2025-03-22. Chief complaint: sudden right-sided weakness and slurred speech. Principal diagnosis: Acute ischemic stroke, left MCA territory. Secondary diagnoses: Atrial fibrillation with rapid ventricular response. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00009",
+      "patient": {
+        "mrn": "MRN-00010005",
+        "name": "SYNTHBY, MORGAN",
+        "dob": "09/30/1966",
+        "sex": "1"
+      },
+      "encounter": {
+        "id": "ENC-10005-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "title": "MRI brain report",
+        "date": "03/18/2025 14:00",
+        "author": "Dr. R. Radiologist",
+        "text": "MRI BRAIN REPORT. Indication: sudden right-sided weakness and slurred speech. Findings: Acute infarct in the left middle cerebral artery territory on diffusion-weighted imaging. No hemorrhage. Impression: findings consistent with acute ischemic stroke, left mca territory."
+      }
+    },
+    {
+      "source_id": "EPIC-00010",
+      "patient": {
+        "mrn": "MRN10006",
+        "name": "DEMOSON, TAYLOR",
+        "dob": "2091-01-01",
+        "sex": "M"
+      },
+      "encounter": {
+        "id": "ENC-10006-1",
+        "class": "inpatient",
+        "start": "2025-04-05",
+        "end": "2025-04-08"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Closed displaced fracture of the right distal radius",
+        "date": "2025-04-08T15:00:00",
+        "author": "Dr. A. Placeholder",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-04-05, discharged 2025-04-08. Chief complaint: right wrist pain after a fall on an outstretched hand. Principal diagnosis: Closed displaced fracture of the right distal radius. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00011",
+      "patient": {
+        "mrn": "mrn: 10007",
+        "name": "PLACEHOLDER, QUINN",
+        "dob": "21-Jan-1955",
+        "sex": "W"
+      },
+      "encounter": {
+        "id": "ENC-10007-1",
+        "class": "inpatient",
+        "start": "2025-04-18",
+        "end": "2025-04-21"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Chronic obstructive pulmonary disease with acute exacerbation",
+        "date": "2025-04-21T15:00:00",
+        "author": "Dr. B. Fictional",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-04-18, discharged 2025-04-21. Chief complaint: worsening shortness of breath and wheeze. Principal diagnosis: Chronic obstructive pulmonary disease with acute exacerbation. Secondary diagnoses: Congestive heart failure, NYHA class III. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00012",
+      "patient": {
+        "mrn": " 00010007 ",
+        "name": {
+          "given": "Quinn",
+          "family": "Placeholder"
+        },
+        "dob": "21-Jan-1955",
+        "sex": "W"
+      },
+      "encounter": {
+        "id": "ENC-10007-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "title": "CT chest report",
+        "date": "2025-04-19T04:00:00",
+        "author": "Dr. R. Radiologist",
+        "text": "CT CHEST REPORT. Indication: worsening shortness of breath and wheeze. Findings: Centrilobular emphysema, upper-lobe predominant. No mass. Impression: findings consistent with chronic obstructive pulmonary disease with acute exacerbation."
+      }
+    },
+    {
+      "source_id": "EPIC-00013",
+      "patient": {
+        "mrn": "mrn: 10008",
+        "name": {
+          "given": "Harper",
+          "family": "Lorem"
+        },
+        "dob": "19781209",
+        "sex": "F"
+      },
+      "encounter": {
+        "id": "ENC-10008-1",
+        "class": "inpatient",
+        "start": "2025-05-06",
+        "end": "2025-05-09"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Iron deficiency anemia",
+        "date": "05/09/2025 17:00",
+        "author": "Dr. B. Fictional",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-05-06, discharged 2025-05-09. Chief complaint: fatigue and exertional lightheadedness. Principal diagnosis: Iron deficiency anemia. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00014",
+      "patient": {
+        "mrn": "MRN-00010009",
+        "name": "IPSUMFIELD, ROWAN",
+        "dob": "14-Mar-1961",
+        "sex": "MALE"
+      },
+      "encounter": {
+        "id": "ENC-10009-1",
+        "class": "inpatient",
+        "start": "2025-05-26",
+        "end": "2025-06-01"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - NSTEMI (non-ST elevation myocardial infarction)",
+        "date": "06/01/2025 13:00",
+        "author": "Dr. C. Synthetic",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-05-26, discharged 2025-06-01. Chief complaint: substernal chest pressure radiating to the left arm. Principal diagnosis: NSTEMI (non-ST elevation myocardial infarction). Secondary diagnoses: Type 2 diabetes mellitus with hyperglycemia. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00015",
+      "patient": {
+        "mrn": " 00010009 ",
+        "name": "Rowan Ipsumfield",
+        "dob": "14-Mar-1961",
+        "sex": "MALE"
+      },
+      "encounter": {
+        "id": "ENC-10009-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "title": "Echocardiogram report",
+        "date": "26-May-2025 16:00",
+        "author": "Dr. R. Radiologist",
+        "text": "ECHOCARDIOGRAM REPORT. Indication: substernal chest pressure radiating to the left arm. Findings: Hypokinesis of the inferior wall. Estimated ejection fraction 40%. No pericardial effusion. Impression: findings consistent with nstemi (non-st elevation myocardial infarction)."
+      }
+    },
+    {
+      "source_id": "EPIC-00016",
+      "patient": {
+        "mrn": "MRN-00010010",
+        "name": "Emerson Nullbury",
+        "dob": "August 25, 2001",
+        "sex": "male"
+      },
+      "encounter": {
+        "id": "ENC-10010-1",
+        "class": "inpatient",
+        "start": "2025-06-09",
+        "end": "2025-06-14"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Acute appendicitis",
+        "date": "2025-06-14 15:00",
+        "author": "Dr. A. Placeholder",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-06-09, discharged 2025-06-14. Chief complaint: right lower quadrant abdominal pain with nausea. Principal diagnosis: Acute appendicitis. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00017",
+      "patient": {
+        "mrn": " 00010011 ",
+        "name": "Sage Exampleton",
+        "dob": "10/02/1940",
+        "sex": "2"
+      },
+      "encounter": {
+        "id": "ENC-10011-1",
+        "class": "inpatient",
+        "start": "2025-06-29",
+        "end": "2025-07-02"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Sepsis secondary to urinary tract infection",
+        "date": "2025-07-02 14:00",
+        "author": "Dr. D. Example",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-06-29, discharged 2025-07-02. Chief complaint: fever, confusion and hypotension. Principal diagnosis: Sepsis secondary to urinary tract infection. Secondary diagnoses: Chronic kidney disease stage 4. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00018",
+      "patient": {
+        "mrn": " 00010011 ",
+        "name": "EXAMPLETON, SAGE",
+        "dob": "02-Oct-1940",
+        "sex": "2"
+      },
+      "encounter": {
+        "id": "ENC-10011-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "title": "Renal ultrasound report",
+        "date": "06/30/2025 12:00",
+        "author": "Dr. R. Radiologist",
+        "text": "RENAL ULTRASOUND REPORT. Indication: fatigue and reduced urine output. Findings: Bilateral echogenic, small kidneys consistent with chronic medical renal disease. No hydronephrosis. Impression: findings consistent with chronic kidney disease stage 4."
+      }
+    },
+    {
+      "source_id": "EPIC-00019",
+      "patient": {
+        "mrn": "MRN-00010012",
+        "name": "Parker Stubbins",
+        "dob": "June 17, 1987",
+        "sex": "W"
+      },
+      "encounter": {
+        "id": "ENC-10012-1",
+        "class": "inpatient",
+        "start": "2025-07-15",
+        "end": "2025-07-21"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Acute pulmonary embolism, right lower lobe segmental",
+        "date": "2025-07-21T09:00:00",
+        "author": "Dr. A. Placeholder",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-07-15, discharged 2025-07-21. Chief complaint: acute pleuritic chest pain and tachycardia. Principal diagnosis: Acute pulmonary embolism, right lower lobe segmental. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00020",
+      "patient": {
+        "mrn": " 00010012 ",
+        "name": "STUBBINS, PARKER",
+        "dob": "1987-06-17",
+        "sex": "W"
+      },
+      "encounter": {
+        "id": "ENC-10012-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "title": "CT pulmonary angiogram report",
+        "date": "2025-07-16 07:00",
+        "author": "Dr. R. Radiologist",
+        "text": "CT PULMONARY ANGIOGRAM REPORT. Indication: acute pleuritic chest pain and tachycardia. Findings: Filling defects in right lower lobe segmental pulmonary arteries consistent with acute pulmonary embolism. No right heart strain. Impression: findings consistent with acute pulmonary embolism, right lower lobe segmental."
+      }
+    },
+    {
+      "source_id": "EPIC-00001-DUP",
+      "patient": {
+        "mrn": "10001",
+        "name": "TESTWELL, AVERY",
+        "dob": "1958-04-12",
+        "sex": "female"
+      },
+      "encounter": {
+        "id": "ENC-10001-1",
+        "class": "inpatient",
+        "start": "2025-01-06",
+        "end": "2025-01-10"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Congestive heart failure, NYHA class III",
+        "date": "2025-01-10T07:00:00",
+        "author": "Dr. D. Example",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-01-06, discharged 2025-01-10. Chief complaint: progressive dyspnea on exertion and bilateral leg swelling. Principal diagnosis: Congestive heart failure, NYHA class III. Secondary diagnoses: Type 2 diabetes mellitus with hyperglycemia. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-00004-DUP",
+      "patient": {
+        "mrn": "MRN10002",
+        "name": "SAMPLECROFT, JORDAN",
+        "dob": "03-Nov-1971",
+        "sex": "MALE"
+      },
+      "encounter": {
+        "id": "ENC-10002-1",
+        "class": "inpatient"
+      },
+      "document": {
+        "type": "Radiology Report",
+        "title": "CT chest report",
+        "date": "2025-01-27T03:00:00",
+        "author": "Dr. R. Radiologist",
+        "text": "CT CHEST REPORT. Indication: worsening shortness of breath and wheeze. Findings: Centrilobular emphysema, upper-lobe predominant. No mass. Impression: findings consistent with chronic obstructive pulmonary disease with acute exacerbation."
+      }
+    },
+    {
+      "source_id": "EPIC-00008-DUP",
+      "patient": {
+        "mrn": "MRN-00010005",
+        "name": {
+          "given": "Morgan",
+          "family": "Synthby"
+        },
+        "dob": "1966-09-30",
+        "sex": "1"
+      },
+      "encounter": {
+        "id": "ENC-10005-1",
+        "class": "inpatient",
+        "start": "2025-03-17",
+        "end": "2025-03-22"
+      },
+      "document": {
+        "type": "Discharge Summary",
+        "title": "Discharge Summary - Acute ischemic stroke, left MCA territory",
+        "date": "2025-03-22T13:00:00",
+        "author": "Dr. D. Example",
+        "text": "DISCHARGE SUMMARY. Admitted 2025-03-17, discharged 2025-03-22. Chief complaint: sudden right-sided weakness and slurred speech. Principal diagnosis: Acute ischemic stroke, left MCA territory. Secondary diagnoses: Atrial fibrillation with rapid ventricular response. Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically. Discharged home in stable condition with outpatient follow-up in 7-10 days. Medications reconciled at discharge."
+      }
+    },
+    {
+      "source_id": "EPIC-ORPHAN-1",
+      "patient": {
+        "name": "Jordan Samplecroft",
+        "dob": "11/03/1971",
+        "sex": "M"
+      },
+      "encounter": {
+        "id": "ENC-10002-2",
+        "class": "ambulatory"
+      },
+      "document": {
+        "type": "Clinical Note",
+        "title": "Pulmonary clinic note",
+        "date": "2025-02-20 10:15",
+        "author": "Dr. B. Fictional",
+        "text": "PULMONARY CLINIC NOTE. Follow-up after pneumonia. Lungs clear on auscultation. Repeat chest imaging in 6 weeks to document resolution."
+      }
+    },
+    {
+      "source_id": "EPIC-CONFLICT-1",
+      "patient": {
+        "mrn": "MRN-00010003",
+        "name": "Riley Mockford",
+        "dob": "1994-07-27",
+        "sex": "F"
+      },
+      "encounter": {
+        "id": "ENC-10003-2",
+        "class": "ambulatory"
+      },
+      "document": {
+        "type": "Clinical Note",
+        "title": "Nephrology clinic note",
+        "date": "03/02/2025 09:00",
+        "author": "Dr. C. Synthetic",
+        "text": "NEPHROLOGY NOTE. eGFR trending down. Discussed renal replacement therapy options. Avoid nephrotoxic agents."
+      }
+    },
+    {
+      "source_id": "EPIC-ALTMRN-1",
+      "patient": {
+        "mrn": "MRN-00090004",
+        "name": "Fakenham, Casey",
+        "dob": "1983-02-18",
+        "sex": "female"
+      },
+      "encounter": {
+        "id": "ENC-90004-1",
+        "class": "ambulatory"
+      },
+      "document": {
+        "type": "Clinical Note",
+        "title": "Breast surgery consult",
+        "date": "2025-02-03T11:00:00",
+        "author": "Dr. D. Example",
+        "text": "BREAST SURGERY CONSULT. Reviewed mammogram showing BI-RADS 4 mass. Ultrasound-guided core biopsy scheduled."
+      }
+    },
+    {
+      "source_id": "EPIC-EMPTY-1",
+      "patient": {
+        "mrn": "10006",
+        "name": "Taylor Demoson",
+        "dob": "05/06/1992",
+        "sex": "M"
+      },
+      "document": {
+        "type": "Scanned Document",
+        "date": "2025-03-01",
+        "text": "   "
+      }
+    }
+  ]
+}

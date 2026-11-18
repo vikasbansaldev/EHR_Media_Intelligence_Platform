@@ -1,0 +1,18 @@
+patient name:  Avery Testwell
+MRN:   mrn: 10001
+DOB: 04/12/1958
+Sex: W
+DATE OF SERVICE: 2025-01-10T07:00:00
+DOCUMENT TYPE: Discharge Summary
+TITLE: Discharge Summary - Congestive heart failure, NYHA class III
+ENCOUNTER: ENC-10001-1
+AUTHOR: Dr. D. Example
+----------------------------------------
+  DISCHARGE SUMMARY.
+  Admitted 2025-01-06, discharged 2025-01-10.
+  Chief complaint: progressive dyspnea on exertion and bilateral leg swelling.
+  Principal diagnosis: Congestive heart failure, NYHA class III.
+  Secondary diagnoses: Type 2 diabetes mellitus with hyperglycemia.
+  Hospital course: patient was treated per protocol, monitored on telemetry and improved clinically.
+  Discharged home in stable condition with outpatient follow-up in 7-10 days.
+  Medications reconciled at discharge.

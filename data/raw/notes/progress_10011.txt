@@ -1,0 +1,14 @@
+PATIENT:  Sage Exampleton
+MRN:   mrn: 10011
+DOB: 19401002
+Sex: female
+DATE OF SERVICE: 07/13/2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10011-2
+AUTHOR: Dr. C. Synthetic
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of chronic kidney disease stage 4.
+  Reports no change of fatigue and reduced urine output.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

@@ -1,0 +1,16 @@
+PATIENT:  Casey Fakenham
+MRN: MRN-00010004
+DOB: 1983-02-18
+Sex: female
+DATE OF SERVICE: March 02, 2025
+DOCUMENT TYPE: Radiology Report
+TITLE: Diagnostic mammogram report
+ENCOUNTER: ENC-10004-1
+AUTHOR: Dr. R. Radiologist
+----------------------------------------
+  DIAGNOSTIC MAMMOGRAM REPORT.
+  Indication: self-detected left breast lump.
+  Findings: 1.8 cm irregular mass, left breast upper outer quadrant.
+  BI-RADS 4 - suspicious.
+  Ultrasound-guided biopsy recommended.
+  Impression: findings consistent with palpable left breast mass, bi-rads 4.

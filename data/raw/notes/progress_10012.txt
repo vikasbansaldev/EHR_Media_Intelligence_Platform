@@ -1,0 +1,14 @@
+Patient:  Parker Stubbins
+MRN: MRN10012
+DOB: 06/17/1987
+Sex: 2
+DATE OF SERVICE: July 29, 2025
+DOCUMENT TYPE: Progress Note
+ENCOUNTER: ENC-10012-2
+AUTHOR: Dr. B. Fictional
+----------------------------------------
+  PROGRESS NOTE.
+  Patient seen for follow-up of acute pulmonary embolism, right lower lobe segmental.
+  Reports improvement of acute pleuritic chest pain and tachycardia.
+  Vitals reviewed.
+  Plan: continue current management, reassess at next visit.

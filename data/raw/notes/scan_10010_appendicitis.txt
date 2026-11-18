@@ -1,0 +1,15 @@
+patient name:  Emerson Nullbury
+MRN:   10010
+DOB: 08/25/2001
+Sex: male
+DATE OF SERVICE: 06/10/2025
+DOCUMENT TYPE: Radiology Report
+TITLE: CT abdomen and pelvis report
+ENCOUNTER: ENC-10010-1
+AUTHOR: Dr. R. Radiologist
+----------------------------------------
+  CT ABDOMEN AND PELVIS REPORT.
+  Indication: right lower quadrant abdominal pain with nausea.
+  Findings: Dilated, thick-walled appendix measuring 11 mm with periappendiceal fat stranding.
+  No abscess.
+  Impression: findings consistent with acute appendicitis.
